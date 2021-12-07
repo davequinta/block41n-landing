@@ -5,7 +5,11 @@ import logo from "../../assets/images/logo/logo.png";
 import flag from "../../assets/images/icons/12.png";
 import Config from "../../configure";
 import $ from "jquery";
-
+import {
+  isWeb3Enabled,
+  connectMetamask,
+  changeWalletAddress,
+} from "../../utility/web3/index.js";
 
 class Header extends Component {
   constructor(props) {
@@ -14,7 +18,7 @@ class Header extends Component {
       navMenuMobile: false,
       redirect: false,
       currentAccount: "",
-    }
+    };
   }
   toggleNavMenu = () => {
     this.setState({navMenuMobile: !this.state.navMenuMobile});
@@ -27,63 +31,54 @@ class Header extends Component {
 
   // Start Wallet Connect
 
-   checkIfWalletIsConnected = async () => {
-    try {
-      const { ethereum } = window;
-
-      if (!ethereum) {
-        console.log("Make sure you have metamask!");
-        return;
+  checkIfWalletIsConnected = async () => {
+    const isEnabled = await isWeb3Enabled();
+    if (isEnabled) {
+      await changeWalletAddress();
+      const connectedAccounts = await connectMetamask();
+      if (connectedAccounts.length !== 0) {
+        this.setState({isWalletConnected: true});
+        const account = connectedAccounts[0];
+        this.setState({currentAccount: account});
       } else {
-        console.log("We have the ethereum object", ethereum);
+        console.log("No authorized account found");
       }
+    } else {
+      console.log("isNotEnabled");
+    }
+  };
 
-      const accounts = await ethereum.request({ method: 'eth_accounts' });
-
-      if (accounts.length !== 0) {
-        const account = accounts[0];
-        console.log("Found an authorized account:", account);
-        this.setState({ currentAccount: account })
-
-        //setCurrentAccount(account);
+  /**
+   * Implement your connectWallet method here
+   */
+  connectWallet = async () => {
+    console.log("connectWallet");
+    try {
+      const isEnabled = await isWeb3Enabled();
+      if (isEnabled) {
+        await changeWalletAddress();
+        const connectedAccounts = await connectMetamask();
+        if (connectedAccounts.length !== 0) {
+          this.setState({isWalletConnected: true});
+          const account = connectedAccounts[0];
+          this.setState({currentAccount: account});
+        } else {
+          console.log("No authorized account found");
+        }
       } else {
-        console.log("No authorized account found")
+        console.log("isNotEnabled");
       }
     } catch (error) {
       console.log(error);
     }
-  }
-
-  /**
-  * Implement your connectWallet method here
-  */
-   connectWallet = async () => {
-    try {
-      const { ethereum } = window;
-
-      if (!ethereum) {
-        alert("Get MetaMask!");
-        return;
-      }
-
-      const accounts = await ethereum.request({ method: "eth_requestAccounts" });
-
-      console.log("Connected", accounts[0]);
-      this.setState({ currentAccount: accounts[0] })
-
-    } catch (error) {
-      console.log(error)
-    }
-  }
+  };
   //End Wallet Conect
 
   componentDidMount() {
     this.mount = true;
-    const el = document.querySelector('.gc_main_menu_wrapper');
-    this.setState({ top: (el.offsetTop + 700), height: el.offsetHeight });
-    window.addEventListener('scroll', this.handleScroll);
-
-    this.checkIfWalletIsConnected();
+    const el = document.querySelector(".gc_main_menu_wrapper");
+    this.setState({top: el.offsetTop + 700, height: el.offsetHeight});
+    window.addEventListener("scroll", this.handleScroll);
 
   }
   componentDidUpdate() {
@@ -211,15 +206,18 @@ class Header extends Component {
                     {navigation}
                   </nav>
                   <div className="language">
-                    <span className="lng-in"><img src={flag} alt="" /></span>
-
+                    <span className="lng-in">
+                      <img src={flag} alt="" />
+                    </span>
                   </div>
                   <div className="login-btn">
-                  {!this.state.currentAccount && (
-                      <button className="btn1" onClick={this.state.connectWallet}>
-                          Connect Wallet
-                        </button>
-                      )}
+                    {!this.state.currentAccount && (
+                      <button
+                        className="btn1"
+                        onClick={this.connectWallet}>
+                        Connect Wallet
+                      </button>
+                    )}
                   </div>
                 </div>
                 <div className="rp_mobail_menu_main_wrapper visible-xs">

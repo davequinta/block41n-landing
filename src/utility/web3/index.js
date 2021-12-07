@@ -4,12 +4,18 @@ import abis from "../../contracts";
 import addresses from "./addresses.json";
 
 const web3 = new Web3(window.ethereum);
-const lendingPool = new web3.eth.Contract(abis.LendingPool.abi, addresses.lendingPool);
-const assetToken = new web3.eth.Contract(abis.AssetToken.abi, addresses.stablecoin);
+const lendingPool = new web3.eth.Contract(
+  abis.LendingPool.abi,
+  addresses.lendingPool
+);
+const assetToken = new web3.eth.Contract(
+  abis.AssetToken.abi,
+  addresses.stablecoin
+);
 
 //connects metamask
 export const connectMetamask = async () => {
-  await window.ethereum.request({ method: "eth_requestAccounts" });
+  return await web3.eth.requestAccounts();
 };
 
 // ask to install metamask if returns null
@@ -21,16 +27,18 @@ export const isWeb3Enabled = async () => {
 
 // deposit x amount of stablecoin to pool
 export const depositOnLendingPool = async (amount) => {
-  const accounts = await window.ethereum.request({ method: "eth_accounts" });
-  await assetToken.methods.approve(lendingPool.address, amount).send({ from: accounts[0] });
-  await lendingPool.methods.deposit(amount).send({ from: accounts[0] });
+  const accounts = await window.ethereum.request({method: "eth_accounts"});
+  await assetToken.methods
+    .approve(lendingPool.address, amount)
+    .send({from: accounts[0]});
+  await lendingPool.methods.deposit(amount).send({from: accounts[0]});
 };
 
 //change metamask to rsk network
 export const changeWalletAddress = async () => {
   await window.ethereum.request({
     method: "wallet_switchEthereumChain",
-    params: [{ chainId: "0x1F" }],
+    params: [{chainId: "0x1F"}],
   });
 };
 
@@ -47,10 +55,16 @@ export const createLoan = async ({
   installmentNumber,
   recipient,
 }) => {
-  const accounts = await window.ethereum.request({ method: "eth_accounts" });
+  const accounts = await window.ethereum.request({method: "eth_accounts"});
   await lendingPool.methods
-    .createLoan(amount, interest, installmentAmount, installmentNumber, recipient)
-    .send({ from: accounts[0] });
+    .createLoan(
+      amount,
+      interest,
+      installmentAmount,
+      installmentNumber,
+      recipient
+    )
+    .send({from: accounts[0]});
 };
 
 //string borrowerAddress,
@@ -69,9 +83,17 @@ export const registerBorrower = async ({
   score,
   evidence,
 }) => {
-  const accounts = await window.ethereum.request({ method: "eth_accounts" });
+  const accounts = await window.ethereum.request({method: "eth_accounts"});
   await lendingPool.methods
-    .registerBorrower(borrowerAddress, age, status, income, activity, score, evidence)
+    .registerBorrower(
+      borrowerAddress,
+      age,
+      status,
+      income,
+      activity,
+      score,
+      evidence
+    )
     .send({
       from: accounts[0],
     });
