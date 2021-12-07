@@ -181,6 +181,11 @@ class Header extends Component {
             Projects
           </a>
         </li>
+        <li>
+          <a className="nav-link" href="/projects">
+            Register Borrower
+          </a>
+        </li>
       </ul>
     );
     return (
