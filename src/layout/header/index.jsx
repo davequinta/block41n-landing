@@ -17,7 +17,7 @@ class Header extends Component {
     this.state = {
       navMenuMobile: false,
       redirect: false,
-      currentAccount: "",
+      currentAccount: null,
     };
   }
   toggleNavMenu = () => {
@@ -79,7 +79,7 @@ class Header extends Component {
     const el = document.querySelector(".gc_main_menu_wrapper");
     this.setState({top: el.offsetTop + 700, height: el.offsetHeight});
     window.addEventListener("scroll", this.handleScroll);
-
+    this.checkIfWalletIsConnected();
   }
   componentDidUpdate() {
     this.state.scroll > this.state.top
@@ -182,8 +182,8 @@ class Header extends Component {
           </a>
         </li>
         <li>
-          <a className="nav-link" href="/projects">
-            Register Borrower
+          <a className="nav-link" href="/register-borrower">
+            Borrower
           </a>
         </li>
       </ul>
@@ -217,9 +217,7 @@ class Header extends Component {
                   </div>
                   <div className="login-btn">
                     {!this.state.currentAccount && (
-                      <button
-                        className="btn1"
-                        onClick={this.connectWallet}>
+                      <button className="btn1" onClick={this.connectWallet}>
                         Connect Wallet
                       </button>
                     )}

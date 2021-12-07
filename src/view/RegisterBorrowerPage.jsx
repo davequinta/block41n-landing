@@ -6,6 +6,7 @@ const RegisterBorrowerPage = () => {
   const [age, setAge] = useState("");
   const [dui, setDui] = useState("");
   const [income, setIncome] = useState("");
+  const [eStatus, setStatus] = useState("");
 
   const changeHandler = (e) => {
     if (e.target.name === "age") {
@@ -17,13 +18,16 @@ const RegisterBorrowerPage = () => {
     if (e.target.name === "income") {
       setIncome(e.target.value);
     }
+    if (e.target.name === "status") {
+      setStatus(e.target.value);
+    }
   };
 
   return (
     <Fragment>
       <Container>
         <div className="main-container ">
-          <h4>New Borrower</h4>
+          <h4>Borrower Request</h4>
           <Separator />
           <section>
             <form>
@@ -58,7 +62,7 @@ const RegisterBorrowerPage = () => {
                 />
               </div>
               <div className="form-group">
-              <label htmlFor="income" className="register-label">
+                <label htmlFor="income" className="register-label">
                   Income
                 </label>
                 <br />
@@ -72,7 +76,21 @@ const RegisterBorrowerPage = () => {
                   onChange={changeHandler}
                 />
               </div>
-
+              <div className="form-group">
+                <label htmlFor="income" className="register-label">
+                  Employment Status
+                </label>
+                <br />
+                <input
+                  type="number"
+                  id="estatus"
+                  required
+                  className="register-input"
+                  value={eStatus}
+                  name="estatus"
+                  onChange={changeHandler}
+                />
+              </div>
               <button type="submit" className="btn1" style={{marginTop: 20}}>
                 Submit request
               </button>
