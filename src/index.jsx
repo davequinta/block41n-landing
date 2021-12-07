@@ -1,7 +1,7 @@
-import React, { Suspense, lazy } from 'react';
+import React, {Suspense, lazy} from 'react';
 import ReactDOM from 'react-dom';
-import { Provider } from "react-redux";
-import { BrowserRouter } from 'react-router-dom';
+import {Provider} from "react-redux";
+import {BrowserRouter} from 'react-router-dom';
 import store from './redux/';
 import * as serviceWorker from './serviceWorker';
 import Config from './configure';
@@ -16,6 +16,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import './assets/css/animate.css';
 import './assets/css/style.css';
 import './assets/css/responsive.css';
+
+import * as web3 from './utility/web3'
 
 const App = lazy(() => import("./App/App"))
 
