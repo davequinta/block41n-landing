@@ -18,7 +18,7 @@ class Footer extends Component {
               <Row>
                 <Col lg={6} md={6} sm={12} className="col-xs-12">
                   <div className="copyright">
-                    <p>© {this.year - 1} - {this.year} <Link to="#"><span>Bit Funding</span></Link> | All rights reserved.</p>
+                    <p>© {this.year} <Link to="#"><span>Bit Funding</span></Link> | All rights reserved.</p>
                   </div>
                 </Col>
                 <Col lg={6} md={6} sm={12} className="col-xs-12">

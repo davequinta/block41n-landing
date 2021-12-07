@@ -29,7 +29,7 @@ class Roadmap extends Component {
   }
   render() {
     let titleAni = (
-      <h2>Development of Bit Money Platform<br />(Road Map)</h2>
+      <h2>Development of Bit Funding Platform<br />(Road Map)</h2>
     )
     let contents = (
       <ul>
@@ -197,7 +197,7 @@ class Roadmap extends Component {
     if (this.props.animate) {
       titleAni = (
         <ReactWOW animation={this.props.animate} duration="1s">
-          <h2>Development of Bit Money Platform<br />(Road Map)</h2>
+          <h2>Development of Bit Funding Platform<br />(Road Map)</h2>
         </ReactWOW>
       )
       contents = (
@@ -384,7 +384,7 @@ class Roadmap extends Component {
     }
     return (
       <div id="road_map" className="wd_scroll_wrap wd_scroll">
-        <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='s4g1XFU8Gto' onClose={() => this.setState({ isOpen: false })} />
+        <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='k_09LLZ8hUs' onClose={() => this.setState({ isOpen: false })} />
         <section className="video-area section">
           <Container>
             <Row>
