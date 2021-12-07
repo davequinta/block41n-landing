@@ -18,13 +18,13 @@ class Footer extends Component {
               <Row>
                 <Col lg={6} md={6} sm={12} className="col-xs-12">
                   <div className="copyright">
-                    <p>© {this.year - 1} - {this.year} <Link to="#"><span>Bit Money</span></Link> | All rights reserved. Design by <Link to="http://webstrot.com/" target="_blank"><span>webstrot</span></Link></p>
+                    <p>© {this.year - 1} - {this.year} <Link to="#"><span>Bit Funding</span></Link> | All rights reserved.</p>
                   </div>
                 </Col>
                 <Col lg={6} md={6} sm={12} className="col-xs-12">
                   <div className="foo-link">
                     <ul>
-                      <li><Link to="#">WhitePaper</Link></li>
+                
                       <li><Link to="#">Terms of Service</Link></li>
                       <li><Link to="#">Privacy Policy</Link></li>
                     </ul>
