@@ -76,7 +76,7 @@ class MainSlider extends Component {
   render() {
     const data = [
       {
-        title: "Bit Founding - The future of banking for and by the community",
+        title: "Bit Funding - The future of banking for and by the community",
         btn1: 'DEVPOST',
         btn2: 'SOURCE CODE'
       },
