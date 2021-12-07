@@ -76,20 +76,11 @@ class MainSlider extends Component {
   render() {
     const data = [
       {
-        title: "Bit Money - Lending & Investment Platform",
-        btn1: 'WHITEPAPER',
-        btn2: 'Buy Tokens Now!'
+        title: "Bit Founding - The future of banking for and by the community",
+        btn1: 'DEVPOST',
+        btn2: 'SOURCE CODE'
       },
-      {
-        title: "Bit Money - Lending & Investment Platform",
-        btn1: 'WHITEPAPER',
-        btn2: 'Buy Tokens Now!'
-      },
-      {
-        title: "Bit Money - Lending & Investment Platform ",
-        btn1: 'WHITEPAPER',
-        btn2: 'Buy Tokens Now!'
-      },
+    
     ]
     const Items = data.map((obj, i) => (
       <div className="item" key={i}>
@@ -114,7 +105,7 @@ class MainSlider extends Component {
                     <Link to="#"><i className="fa fa-envelope"></i></Link>
                   </li>
                 </ul>
-                <h2>{obj.title} {i + 1}</h2>
+                <h2>{obj.title}</h2>
                 <div className="buttons">
                   <Link to="#" className="btn1" >{obj.btn1}</Link>
                   <Link to="#" className="btn2" >{obj.btn2}</Link>
@@ -122,11 +113,11 @@ class MainSlider extends Component {
               </div>
             </Col>
             <Col lg={6} md={6} sm={12} className="col-xs-12 hidden-xs hidden-sm">
-              <Countdown timeTillDate="12 30 2019, 6:00 am" timeFormat="MM DD YYYY, h:mm a" />
+              <Countdown timeTillDate="12 08 2021, 8:00 am" timeFormat="MM DD YYYY, h:mm a" />
             </Col>
           </Row>
         </Container>
-      </div >
+      </div>
     ))
     return (
       <div className="slider-area">

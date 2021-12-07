@@ -13,13 +13,14 @@ class About extends Component {
             <h2 className="f-40 fw-400">
               About The Project
             </h2>
-            <p>Bit Money is a lending and investment, multicurrency and multifunctional online platform based on blockchain technology. There investors and borrowers meet each other and have the opportunity to lend money on mutually beneficial.</p>
-            <p>Bit Money is a unique service that allows individuals to access loans from the comfort of their home in fiat currencies or crypto-currencies.</p>
-            <p>Bit Money is a multi-functional platform which allows each participant to keep money in a multi-currency online wallet, buy and sell currency on the exchange, invest money, get a loan in a convenient currency.</p>
-            <div className="buttons">
+            <p>Bit Funding  is the future of banking for and by the community.</p>
+            <p>Financial platform for neobanking and investing built on top of the bitcoin blockchain network focused on small companies and entrepreneurs. </p>
+            <p>We use Open Banking, dAPIs, blockchain technologies, and Machine Learning to: facilitate the access to traditional bank services to unbanked people, provide a risk analysis framework for investors to fund microcredits and support entrepreneurs by crowdfunding, aggregate all transaction needs including remittances in one place, and supply with alternative opportunities to invest in innovative projects from anyone in the platform; both in fiat and crypto, and looking to integrate with all the major providers in the market.
+</p>
+            {/* <div className="buttons">
               <Link to="#" className="btn1">WHITEPAPER</Link>
               <Link to="#" className="btn3">Buy Tokens Now!</Link>
-            </div>
+            </div> */}
           </div>
         </Col>
         <Col lg={6} md={6} sm={12} className="col-xs-12">

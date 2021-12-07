@@ -76,8 +76,7 @@ class Header extends Component {
         <li><a className="nav-link" href="#project">Project</a></li>
         <li><a className="nav-link" href="#steps">Steps</a></li>
         <li><a className="nav-link" href="#road_map">Road Map</a></li>
-        <li><a className="nav-link" href="#tokens">Tokens</a></li>
-        <li><a className="nav-link" href="#news">News</a></li>
+
       </ul>
     )
     return (
@@ -105,7 +104,7 @@ class Header extends Component {
                     </ul>
                   </div>
                   <div className="login-btn">
-                    <Link to="#" className="btn1"><i className="fa fa-user"></i><span>Login</span></Link>
+                    <Link to="#" className="btn1"><i className="fa fa-user"></i><span>Connect Wallet</span></Link>
                   </div>
                 </div>
                 <div className="rp_mobail_menu_main_wrapper visible-xs">
