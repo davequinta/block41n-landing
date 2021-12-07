@@ -34,7 +34,6 @@ class Roadmap extends Component {
     let contents = (
       <ul>
         <li>
-          <span className="years"><span className="con">2016</span></span>
           <div className="serials">
             <span className="cre"></span>
             <Col sm={6} className="col-xs-12 left-con">
@@ -45,8 +44,8 @@ class Roadmap extends Component {
                   </div>
                   <div className="dright">
                     <div className="content">
-                      <h3>Idea</h3>
-                      <p>(September - October)</p>
+                      <h3> Tech Stack Integration (RSK-OBP-API3-Qredo)</h3>
+                      <p>Q1 2022</p>
                     </div>
                   </div>
                 </div>
@@ -57,8 +56,8 @@ class Roadmap extends Component {
                 <div className="dbox">
                   <div className="dleft">
                     <div className="content">
-                      <h3>Market Research</h3>
-                      <p>(October - December)</p>
+                      <h3>Business Strategy</h3>
+                      <p>Q1 2022</p>
                     </div>
                   </div>
                   <div className="dright">
@@ -70,7 +69,6 @@ class Roadmap extends Component {
           </div>
         </li>
         <li>
-          <span className="years"><span className="con">2017</span></span>
           <div className="serials">
             <span className="cre"></span>
             <Col sm={6} className="col-xs-12 left-con">
@@ -81,8 +79,8 @@ class Roadmap extends Component {
                   </div>
                   <div className="dright">
                     <div className="content">
-                      <p>(1Q 2017)</p>
-                      <h3>Formation of foundersteam Business plan</h3>
+                      <p>(Q2 2022)</p>
+                      <h3>Tropykus Integration</h3>
                     </div>
                   </div>
                 </div>
@@ -93,8 +91,8 @@ class Roadmap extends Component {
                 <div className="dbox">
                   <div className="dleft">
                     <div className="content">
-                      <p>(2Q 2017)</p>
-                      <h3>Start of Platform<br /> Development</h3>
+                      <p>(Q2 2022)</p>
+                      <h3>Crypto Visa</h3>
                     </div>
                   </div>
                   <div className="dright">
@@ -114,8 +112,8 @@ class Roadmap extends Component {
                   </div>
                   <div className="dright">
                     <div className="content">
-                      <p>(3Q 2017)</p>
-                      <h3>WhitePaper<br /> Landing page</h3>
+                      <p>(Q3 2022)</p>
+                      <h3>Metamask <br /> Institutional Integration</h3>
                     </div>
                   </div>
                 </div>
@@ -126,8 +124,8 @@ class Roadmap extends Component {
                 <div className="dbox">
                   <div className="dleft">
                     <div className="content">
-                      <p>(4Q 2017)</p>
-                      <h3>Pre-Sale<br />Launch Platform<br />in beta test mode</h3>
+                      <p>(Q3 2022)</p>
+                      <h3>Software<br />Updates</h3>
                     </div>
                   </div>
                   <div className="dright">
@@ -139,40 +137,7 @@ class Roadmap extends Component {
           </div>
         </li>
         <li>
-          <span className="years"><span className="con">2018</span></span>
-          <div className="serials">
-            <span className="cre"></span>
-            <Col sm={6} className="col-xs-12 left-con">
-              <div className="box-con">
-                <div className="dbox">
-                  <div className="dleft">
-                    <div className="imgs"><img src={video7} alt="video" /></div>
-                  </div>
-                  <div className="dright">
-                    <div className="content">
-                      <p>(1Q 2018)</p>
-                      <h3>ICO Launch<br />Identification<br />Systemsand work<br />with API Partners</h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Col>
-            <Col sm={6} className="col-xs-12 right-con">
-              <div className="box-con">
-                <div className="dbox">
-                  <div className="dleft">
-                    <div className="content">
-                      <p>(2Q 2018)</p>
-                      <h3>Launch the<br />Platform in<br />Full mode</h3>
-                    </div>
-                  </div>
-                  <div className="dright">
-                    <div className="imgs"><img src={video8} alt="video" /></div>
-                  </div>
-                </div>
-              </div>
-            </Col>
-          </div>
+         
           <div className="serials">
             <span className="cre"></span>
             <Col sm={12} className="col-xs-12 center-con">
@@ -183,8 +148,8 @@ class Roadmap extends Component {
                   </div>
                   <div className="dright">
                     <div className="content">
-                      <p>(4Q 2018)</p>
-                      <h3>Establishing<br />Representative<br />Office</h3>
+                      <p>(Q4 2022)</p>
+                      <h3>Launch<br />MVP</h3>
                     </div>
                   </div>
                 </div>
@@ -215,8 +180,8 @@ class Roadmap extends Component {
                       </div>
                       <div className="dright">
                         <div className="content">
-                          <h3>Idea</h3>
-                          <p>(September - October)</p>
+                          <h3>Tech Stack Integration (RSK-OBP-API3-Qredo)</h3>
+                          <p>(Q1 2022)</p>
                         </div>
                       </div>
                     </div>
@@ -229,8 +194,8 @@ class Roadmap extends Component {
                     <div className="dbox">
                       <div className="dleft">
                         <div className="content">
-                          <h3>Market Research</h3>
-                          <p>(October - December)</p>
+                          <h3>Business Strategy</h3>
+                          <p>Q1 2022</p>
                         </div>
                       </div>
                       <div className="dright">
@@ -255,8 +220,8 @@ class Roadmap extends Component {
                       </div>
                       <div className="dright">
                         <div className="content">
-                          <p>(1Q 2017)</p>
-                          <h3>Formation of foundersteam Business plan</h3>
+                          <p>(Q2 2022)</p>
+                          <h3>Tropykus Integration</h3>
                         </div>
                       </div>
                     </div>
@@ -269,7 +234,7 @@ class Roadmap extends Component {
                     <div className="dbox">
                       <div className="dleft">
                         <div className="content">
-                          <p>(2Q 2017)</p>
+                          <p>(Q2 2022)</p>
                           <h3>Start of Platform<br /> Development</h3>
                         </div>
                       </div>
