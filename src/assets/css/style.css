@@ -726,16 +726,16 @@ h4 {
   float: left;
   width: 100%;
 }
-.slider-area  .nextButton,
-.slider-area  .previousButton {
+.slider-area .nextButton,
+.slider-area .previousButton {
   text-align: center;
-display: flex;
-justify-content: center;
-align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.slider-area  .nextButton svg *,
-.slider-area  .previousButton svg *{
-  fill:  #fff;
+.slider-area .nextButton svg *,
+.slider-area .previousButton svg * {
+  fill: #fff;
 }
 .slider-area .previousButton {
   left: -138px;
@@ -771,7 +771,7 @@ align-items: center;
   -moz-transition: all 0.5s;
   transition: all 0.5s;
 }
-.slider-area:hover  .nextButton {
+.slider-area:hover .nextButton {
   right: 10px;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -779,8 +779,8 @@ align-items: center;
   -moz-transition: all 0.5s;
   transition: all 0.5s;
 }
-.slider-area  .nextButton:hover,
-.slider-area  .previousButton:hover {
+.slider-area .nextButton:hover,
+.slider-area .previousButton:hover {
   background: rgba(57, 100, 208, 1);
   background: -moz-linear-gradient(
     left,
@@ -2108,7 +2108,7 @@ ul ul > li.has-sub > a:before {
   -webkit-transition-delay: 2.1s;
   transition-delay: 2.1s;
 }
-.slider-area .slider-content h2{
+.slider-area .slider-content h2 {
   transition: all 1.3s ease;
   -webkit-transform: translateY(-20px);
   transform: translateY(-20px);
@@ -2116,7 +2116,7 @@ ul ul > li.has-sub > a:before {
   -webkit-transition-delay: 1.8s;
   transition-delay: 1.8s;
 }
-.slider-area .slider-content .buttons .btn1{
+.slider-area .slider-content .buttons .btn1 {
   transition: all 1.6s ease;
   -webkit-transform: translateY(20px);
   transform: translateY(20px);
@@ -2124,7 +2124,7 @@ ul ul > li.has-sub > a:before {
   -webkit-transition-delay: 1.9s;
   transition-delay: 1.9s;
 }
-.slider-area .slider-content .buttons .btn2{
+.slider-area .slider-content .buttons .btn2 {
   transition: all 1.9s ease;
   -webkit-transform: translateY(20px);
   transform: translateY(20px);
@@ -5617,7 +5617,39 @@ canvas {
 .owl-carousel .owl-stage-outer {
   z-index: 999;
 }
-.video-js{
+.video-js {
   width: 770px;
   height: 400px;
+}
+
+.main-container {
+  min-height: 100vh;
+  padding-top: 7rem;
+  padding-bottom: 3rem;
+}
+
+.centered-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.profile-container {
+  color: #ffffff;
+}
+
+.register-input {
+  border: 0;
+  color: "#000";
+  font-size: 12px;
+  border-radius: 10;
+  min-width: 250px;
+}
+.register-label {
+  font-size: 10px;
+}
+
+.form-group {
+  display: "block";
 }
