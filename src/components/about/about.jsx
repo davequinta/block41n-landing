@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import ReactWOW from 'react-wow';
-import aboutimg from '../../assets/images/about/1.png';
+import aboutimg from '../../assets/images/about/img4.png';
 
 class About extends Component {
   render() {
@@ -25,7 +25,7 @@ class About extends Component {
         </Col>
         <Col lg={6} md={6} sm={12} className="col-xs-12">
           <div className="about-img">
-            <img src={aboutimg} alt="about" />
+            <img src={aboutimg}  alt="about" width='796px' height='473px'/>
           </div>
         </Col>
       </Row>
@@ -57,8 +57,8 @@ class About extends Component {
           </Col>
           <Col lg={6} md={6} sm={12} className="col-xs-12">
             <ReactWOW animation={this.props.animate} duration="1s">
-              <div className="about-img">
-                <img src={aboutimg} alt="about" />
+              <div className="about-img" >
+                <img src={aboutimg} alt="about"/>
               </div>
             </ReactWOW>
           </Col>
