@@ -23,7 +23,6 @@ class HomePage extends Component {
         <About fill="#10122d" />
         <Features />
         <Projects />
-        <Steps fill="#10122d" />
         <Roadmap fill="#10122d" />
         <div className="wd_scroll_wrap">
           <Teams fill="#10122d" />

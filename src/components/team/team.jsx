@@ -16,28 +16,40 @@ class Teams extends Component {
   render() {
     const coreTeam = [
       {
-        meamber: 'Ajay Suryavanshi',
-        position: 'Co-Founder & CEO',
+        meamber: 'Cristhian Tejada ',
+        position: 'Social Good / Blockchain Developer',
         image: team1,
-        text: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. '
+        text: 'I strongly believe that open data, blockchain and data science/IA are expected to play an essential role in the sustainable development and social good in the next years.'
       },
       {
-        meamber: 'Jeniffer Doe',
-        position: 'Co-Founder & CEO',
+        meamber: 'Giancarlo Pablo',
+        position: 'Data Science / Business Manager',
         image: team2,
-        text: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum. '
+        text: 'Giancarlo is a salvadorean Data Scientist/Engineer experienced in Solutions for Digital Businesses.'
       },
       {
-        meamber: 'Ariful Islam',
-        position: 'Co-Founder & CEO',
+        meamber: 'Rafael Contreras Pimentel',
+        position: 'Solidity Developer',
         image: team3,
-        text: 'Here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words.'
+        text: 'Rafael is a web and solidity developer interested in creating open financial products for everyone'
       },
       {
-        meamber: 'Maria Willium',
-        position: 'Co-Founder & CEO',
+        meamber: 'Mishka S',
+        position: 'Solidity Developer',
         image: team4,
-        text: 'The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. There are many variations of passages.'
+        text: 'Mishka S is a Solidity, Rust, javascript, typescript dev. Shes interested in oracle mechanisms, zk proofs and credit rating on chain'
+      },
+      {
+        meamber: 'Mauricio Trejo',
+        position: 'Frontend Developer',
+        image: team5,
+        text: 'Experienced Mobile Engineer with a demonstrated history of working in the computer software industry. Skilled in Firebase, Vue.js, React.js, Front-end Development, Android and iOS Development and React Native Development.'
+      },
+      {
+        meamber: 'David Quintanilla',
+        position: 'FullStack Developer',
+        image: team6,
+        text: 'Im a developer from El Salvador, who loves new and crazy ideas, and be in touch with the new technologies.'
       },
     ]
 
@@ -172,7 +184,7 @@ class Teams extends Component {
             </Container>
           </div>
         </section>
-        <section className="team2-area pd-t100 pd-b50">
+        {/* <section className="team2-area pd-t100 pd-b50">
           <div className="particles-team">
             <Container>
               <Row>
@@ -200,7 +212,7 @@ class Teams extends Component {
               </Row>
             </Container>
           </div>
-        </section>
+        </section> */}
         <div className="sud">
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 181.1" style={{enableBackground:"new 0 0 1920 181.1"}} space="preserve">
               <g>
