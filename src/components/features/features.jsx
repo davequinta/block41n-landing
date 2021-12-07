@@ -26,8 +26,8 @@ class Features extends Component {
                 <li>
                   <Col className="pd-0 hidden-xs" sm={6}>
                     <div className="contents-l mr-b30">
-                      <h2>Lending</h2>
-                      <p>Unique platform for lending and investment with a safety fund <br />and cooperation with world-wide arbitration.</p>
+                      <h2>Bank accounts</h2>
+                      <p>Create a saving account at Banco Hipotecario <br /> with a simple authentication in our app</p>
                       <Link to="#" className="btn1">read more</Link>
                     </div>
                   </Col>
@@ -38,8 +38,8 @@ class Features extends Component {
                   </Col>
                   <Col className="pd-0 visible-xs" sm={6}>
                     <div className="contents-l mr-b30">
-                      <h2>Lending</h2>
-                      <p>Unique platform for lending and investment with a safety fund <br /> and cooperation with world-wide arbitration.</p>
+                      <h2>Bank accounts</h2>
+                      <p>Create a saving account at Banco Hipotecario <br /> with a simple authentication in our app</p>
                       <Link to="#" className="btn1">read more</Link>
                     </div>
                   </Col>
@@ -47,8 +47,8 @@ class Features extends Component {
                 <li className="rl">
                   <Col className="pd-0 floatright mr-b30 hidden-xs" sm={6}>
                     <div className="contents-r">
-                      <h2>Exchange Money</h2>
-                      <p>Exchange between all popular currencies with a couple of clicks. <br />Instant send from one currency to another.</p>
+                      <h2>Wallets</h2>
+                      <p>You’d get your own wallet backed by Qredo and interface<br />with Metamask to make use of your funds and do transactions in our platform</p>
                       <Link to="#" className="btn1">read more</Link>
                     </div>
                   </Col>
@@ -59,8 +59,8 @@ class Features extends Component {
                   </Col>
                   <Col className="pd-0 floatright mr-b30 visible-xs" sm={6}>
                     <div className="contents-r">
-                      <h2>Exchange Money</h2>
-                      <p>Exchange between all popular currencies with a couple of clicks.<br />Instant send from one currency to another.</p>
+                    <h2>Wallets</h2>
+                      <p>You’d get your own wallet backed by Qredo and interface<br />with Metamask to make use of your funds and do transactions in our platform</p>
                       <Link to="#" className="btn1">read more</Link>
                     </div>
                   </Col>
@@ -68,8 +68,8 @@ class Features extends Component {
                 <li>
                   <Col className="pd-0 hidden-xs" sm={6}>
                     <div className="contents-l mr-b30">
-                      <h2>Investment</h2>
-                      <p>Improved system of borrower's verification. Providing <br />verification services for other services.</p>
+                      <h2>Lending</h2>
+                      <p>A P2P and traditional credit <br />options to fund your entrepreneurships</p>
                       <Link to="#" className="btn1">read more</Link>
                     </div>
                   </Col>
@@ -80,8 +80,8 @@ class Features extends Component {
                   </Col>
                   <Col className="pd-0 visible-xs" sm={6}>
                     <div className="contents-l mr-b30">
-                      <h2>Investment</h2>
-                      <p>Improved system of borrower's verification. Providing <br />verification services for other services.</p>
+                      <h2>Crowdfunding</h2>
+                      <p>For people to support their common topics of interest and <br />any project they decide as whole that it is important for their community</p>
                       <Link to="#" className="btn1">read more</Link>
                     </div>
                   </Col>
@@ -133,8 +133,8 @@ class Features extends Component {
                     <ReactWOW animation={this.props.animate} duration="1.6s">
                       <Col className="pd-0 hidden-xs" sm={6}>
                         <div className="contents-l mr-b30">
-                          <h2>Lending</h2>
-                          <p>Unique platform for lending and investment with a safety fund <br />and cooperation with world-wide arbitration.</p>
+                        <h2>Bank accounts</h2>
+                      <p>Create a saving account at Banco Hipotecario <br /> with a simple authentication in our app</p>
                           <Link to="#" className="btn1">read more</Link>
                         </div>
                       </Col>
@@ -149,8 +149,8 @@ class Features extends Component {
                     <ReactWOW animation={this.props.animate} duration="1.6s">
                       <Col className="pd-0 visible-xs" sm={6}>
                         <div className="contents-l mr-b30">
-                          <h2>Lending</h2>
-                          <p>Unique platform for lending and investment with a safety fund <br /> and cooperation with world-wide arbitration.</p>
+                        <h2>Bank accounts</h2>
+                        <p>Create a saving account at Banco Hipotecario <br /> with a simple authentication in our app</p>
                           <Link to="#" className="btn1">read more</Link>
                         </div>
                       </Col>
@@ -160,8 +160,8 @@ class Features extends Component {
                     <ReactWOW animation={this.props.animate} duration="1.6s">
                       <Col className="pd-0 floatright mr-b30 hidden-xs" sm={6}>
                         <div className="contents-r">
-                          <h2>Exchange Money</h2>
-                          <p>Exchange between all popular currencies with a couple of clicks. <br />Instant send from one currency to another.</p>
+                        <h2>Wallets</h2>
+                      <p>You’d get your own wallet backed by Qredo and interface<br />with Metamask to make use of your funds and do transactions in our platform</p>
                           <Link to="#" className="btn1">read more</Link>
                         </div>
                       </Col>
@@ -176,8 +176,8 @@ class Features extends Component {
                     <ReactWOW animation={this.props.animate} duration="1.6s">
                       <Col className="pd-0 floatright mr-b30 visible-xs" sm={6}>
                         <div className="contents-r">
-                          <h2>Exchange Money</h2>
-                          <p>Exchange between all popular currencies with a couple of clicks.<br />Instant send from one currency to another.</p>
+                        <h2>Wallets</h2>
+                      <p>You’d get your own wallet backed by Qredo and interface<br />with Metamask to make use of your funds and do transactions in our platform</p>
                           <Link to="#" className="btn1">read more</Link>
                         </div>
                       </Col>
