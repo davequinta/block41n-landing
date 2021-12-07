@@ -6,12 +6,14 @@ import flag from '../../assets/images/icons/12.png';
 import Config from '../../configure';
 import $ from 'jquery';
 
+
 class Header extends Component {
   constructor(props) {
     super(props)
     this.state = {
       navMenuMobile: false,
-      redirect: false
+      redirect: false,
+      currentAccount: "",
     }
   }
   toggleNavMenu = () => {
@@ -23,11 +25,66 @@ class Header extends Component {
     }
   }
 
+  // Start Wallet Connect
+
+   checkIfWalletIsConnected = async () => {
+    try {
+      const { ethereum } = window;
+
+      if (!ethereum) {
+        console.log("Make sure you have metamask!");
+        return;
+      } else {
+        console.log("We have the ethereum object", ethereum);
+      }
+
+      const accounts = await ethereum.request({ method: 'eth_accounts' });
+
+      if (accounts.length !== 0) {
+        const account = accounts[0];
+        console.log("Found an authorized account:", account);
+        this.setState({ currentAccount: account })
+
+        //setCurrentAccount(account);
+      } else {
+        console.log("No authorized account found")
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  /**
+  * Implement your connectWallet method here
+  */
+   connectWallet = async () => {
+    try {
+      const { ethereum } = window;
+
+      if (!ethereum) {
+        alert("Get MetaMask!");
+        return;
+      }
+
+      const accounts = await ethereum.request({ method: "eth_requestAccounts" });
+
+      console.log("Connected", accounts[0]);
+      this.setState({ currentAccount: accounts[0] })
+      
+    } catch (error) {
+      console.log(error)
+    }
+  }
+  //End Wallet Conect
+
   componentDidMount() {
     this.mount = true;
     const el = document.querySelector('.gc_main_menu_wrapper');
     this.setState({ top: (el.offsetTop + 700), height: el.offsetHeight });
     window.addEventListener('scroll', this.handleScroll);
+
+    this.checkIfWalletIsConnected();
+
   }
   componentDidUpdate() {
     this.state.scroll > this.state.top ?
@@ -101,7 +158,11 @@ class Header extends Component {
                     
                   </div>
                   <div className="login-btn">
-                    <Link to="#" className="btn1"><i className="fa fa-user"></i><span>Connect Wallet</span></Link>
+                  {!this.state.currentAccount && (
+                      <button className="btn1" onClick={this.state.connectWallet}>
+                          Connect Wallet 
+                        </button>
+                      )}
                   </div>
                 </div>
                 <div className="rp_mobail_menu_main_wrapper visible-xs">
