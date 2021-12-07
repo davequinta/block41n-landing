@@ -26,14 +26,9 @@ class HomePage extends Component {
         <Steps fill="#10122d" />
         <Roadmap fill="#10122d" />
         <div className="wd_scroll_wrap">
-          <Tokens />
           <Teams fill="#10122d" />
         </div>
-        <Blogs />
-        <div className="wd_scroll_wrap">
-          <PressMedia />
-          <Subscribe />
-        </div>
+       
       </Fragment>
     );
   }

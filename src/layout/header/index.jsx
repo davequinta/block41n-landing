@@ -98,10 +98,7 @@ class Header extends Component {
                   </nav>
                   <div className="language">
                     <span className="lng-in"><img src={flag} alt="" /></span>
-                    <ul className="lng-out">
-                      <li><img src={flag} alt="" /></li>
-                      <li><img src={flag} alt="" /></li>
-                    </ul>
+                    
                   </div>
                   <div className="login-btn">
                     <Link to="#" className="btn1"><i className="fa fa-user"></i><span>Connect Wallet</span></Link>
