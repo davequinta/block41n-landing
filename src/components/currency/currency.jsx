@@ -12,34 +12,29 @@ class Currency extends Component {
     const data = [
       {
         coinName: 'Bitcoin',
-        price: '4.160651',
+        price: '51520.42',
         coin: 'BTC',
         image: coin1
       },
       {
         coinName: 'Ethereum',
-        price: '3.245000',
+        price: '44004.45',
         coin: 'ETH',
         image: coin2
       },
       {
-        coinName: 'Dollar (USD)',
-        price: '58634.000',
-        coin: 'USD',
+        coinName: 'QREDO',
+        price: '6.33',
+        coin: 'QREDO',
         image: coin3
       },
       {
-        coinName: 'Total USD',
-        price: '111969.062',
+        coinName: 'DOC',
+        price: '1',
         coin: 'USD',
         image: coin4
       },
-      {
-        coinName: 'Token Sale',
-        price: '346636.775',
-        coin: '',
-        image: coin5
-      }
+     
     ]
 
     const Items = ({ image, coinName, price, coin, dir }) => {
