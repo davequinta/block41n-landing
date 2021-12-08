@@ -1,3 +1,10 @@
+### Business Files
+
+[**Project Proposal**](https://drive.google.com/file/d/1HoPuxQesyMNYmKtF-rhUvo_xNA57opcv/view?usp=sharing)
+[**Product Demo**](https://youtu.be/NzLioruiRqA)
+
+-----------------------------------------------------------------------------------------------
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
